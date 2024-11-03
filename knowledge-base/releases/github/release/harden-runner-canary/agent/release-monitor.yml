@@ -1,0 +1,12 @@
+name: "nholuongut-runner-canary/agent release - for testing"
+release-process:
+  artifact-location:
+    github-release:
+      repo: nholuongut-runner-canary/agent
+  pipeline:
+    github-action:
+      repo: nholuongut-runner-canary/agent
+      workflow: release.yml
+    branches: 
+      - main
+      - release/*

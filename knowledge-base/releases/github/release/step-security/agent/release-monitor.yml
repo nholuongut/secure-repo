@@ -1,0 +1,11 @@
+name: "nholuongut/agent release"
+release-process:
+  artifact-location:
+    github-release:
+      repo: nholuongut/agent
+  pipeline:
+    github-action:
+      repo: nholuongut/agent
+      workflow: release.yml
+    branches: 
+      - main
